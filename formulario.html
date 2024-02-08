@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- MENU -->
+<nav>
+    <div id="NavPart1">
+    <a href="index.html">Inicio</a>
+    <input type="search">
+    </div>
+    <ul id="NavPart2">
+        <li></li>
+        <li><a href="nosotros.html">¿Quienes Somos?</a></li>
+        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+        <li><a href="formulario.html">Pedido Personalizado</a></li>
+    </ul>
+</nav>
+
+<!-- FORMULARIO -->
+<section id="section-formulario">
+    <article id="article-texto">
+        <h1>Formulario de Pedido</h1>
+        <p>Completa el formulario con la información requerida para realizar el pedido personalizado</p>
+    </article>
+
+    <div>
+    <form action="/procesar_formulario" method="post">
+        <label for="nombre" class="label-formulario">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+    
+        <label for="apellido" class="label-formulario">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br>
+    
+        <label for="email" class="label-formulario">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+    
+        <label for="mensaje" class="label-formulario">Instrucciones del pedido:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+        <label for="file" class="label-formulario">Referencia: (Opcional)</label><br>
+        <input type="file" id="file" name="file" required><br>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    <img src="img/img-form.png" alt="">
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <section>
+        <img src="img/Logo-Cicular-FondoMarmol.png" alt="">
+    </section>
+    <section>
+        <p>Mapa del Sitio</p>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">¿Quienes Somos?</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="formulario.html">Pedido Personalizado</a></li>
+        </ul>
+    </section>
+    <section>
+        <form action="">
+            <label for="email">Suscribete a nuestro Newsletter</label><br>
+            <input type="email" id="input-newletter"><br>
+            <input type="button" value="Enviar" id="input-boton">
+        </form>
+    </section>
+</footer>
+</body>
+</html>

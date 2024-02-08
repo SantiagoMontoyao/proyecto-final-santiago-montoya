@@ -1,0 +1,510 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Montserrat", sans-serif;
+}
+body{
+    width: 100%;
+    /* height: 1000px; */
+}
+
+/* MENU */
+nav{
+    width: 100%;
+    background-color: #dcdcdc;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #00000075;
+    /* position: sticky; */
+    position: fixed;
+    top: 0;
+}
+#NavPart1{
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+}
+#NavPart2{
+    width:70%;
+    display: flex;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+    margin: 5px;
+}
+nav a{
+    color:#0c0c0c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* BANNER */
+#banners{
+    width:100%;
+}
+
+/* FILTROS */
+#filtros{
+    margin-top: -4px;
+}
+#filtros ul{
+    height: 35px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#filtros ul li{
+    list-style: none;
+}
+
+/* CATEGORIAS */
+#categorias{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em 1em 2em 1em;
+}
+#categorias article h3{
+    color: #ffffff00;
+}
+#categorias article:hover h3{
+    color: white;
+}
+#categorias article{
+    background-color: grey;
+    height: 300px;
+    width: 18%;
+    border-radius: 5px;
+}
+#categoria-foto{
+    background-image: url(img/foto.png);
+    background-size: cover;
+}
+#categoria-ilus{
+    background-image: url(img/ilus-digital.png);
+    background-size: cover;
+}
+#categoria-pin{
+    background-image: url(img/pintura-oleo.png);
+    background-size: cover;
+}
+#categoria-pedido{
+    background-image: url(img/pedido.png);
+    background-size: cover;
+}
+.fondo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fondo:hover{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* PRODUCTOS */
+#productos{
+    background-color: #F4F4F6;
+    padding: 50px 10% 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#productos article{
+    height: auto;
+    width: 15%;
+    background-color: #DDDDE0;
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-radius: 10px;
+    margin: 15px;
+    /* flex: 1 0 15%; */
+}
+#productos article h4{
+    margin-bottom: 5px;
+}
+#productos article p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#productos article img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+#productos article a{
+    /* background-color: green; */
+    padding: 5px 10px;
+    border-radius: 3px;
+    color:black;
+    border: solid black 1px;
+    text-decoration: none;
+    font-weight: 500;
+}
+#productos article a:hover{
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0c0c0c;
+    padding: 25px 15% 25px 15%;
+    align-items: top;
+}
+footer section{
+    /* background-color: green; */
+    width: 33%;
+}
+footer img{
+    width: 150px;
+}
+footer p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    font-size: 16px;
+    color: white;
+    line-height: 25px;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+footer label{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+}
+#input-newletter{
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    border: solid 1px grey;
+    font-size: 16px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+#input-boton{
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    /* width: 20%; */
+    background-color:#8d0508;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+#input-boton:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* NOSOTROS */
+/* TEXTO DE PRESENTACIÓN */
+#texto-inicial-nosotros{
+    margin: 60px 0 0 0;
+    /* background-color: green; */
+    padding: 50px 20%;
+    text-align: center;
+}
+#texto-inicial-nosotros h1{
+    margin-bottom: 15px;
+}
+
+/* DIFERENCIALES */
+#section-diferenciales{
+    background-color: #F4F4F6;
+    padding: 50px 15%;
+    display: flex;
+}
+#section-diferenciales article{
+    padding: 20px;
+    width: 30%;
+    background-color: #DDDDE0;
+    /* border: solid 2px #0c0c0c; */
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+#section-diferenciales article:hover{
+    box-shadow: 0px 0px 5px #00000050;
+}
+#section-diferenciales img{
+    width: 65px;
+}
+#section-diferenciales h2{
+    margin: 10px;
+}
+
+/* MISIÓN */
+#section-mision{
+    background-color: #8d0508;
+    padding: 50px 20%;
+    display:flex;
+    align-items: center;
+}
+#section-mision article{
+    width: 80%;
+    margin: 20px;
+    text-align: right;
+}
+#section-mision img{
+    width: 20%;
+    padding: 25px;
+    background-color: #fefefe;
+    border-radius: 10px;
+}
+#section-mision h3{
+    margin: 0 0 10px 0 ;
+    font-size: 22px;
+    color:#fefefe;
+}
+#section-mision p{
+    font-size: 18px;
+    color:#fefefe;
+}
+
+/* VISIÓN */
+#section-vision{
+    background-color: #c5c6d0;
+    padding: 50px 20%;
+    display:flex;
+    align-items: center;
+}
+#section-vision article{
+    width: 80%;
+    margin: 20px;
+    text-align: left;
+}
+#section-vision img{
+    width: 20%;
+    padding: 25px;
+    background-color: #fefefe;
+    border-radius: 10px;
+}
+#section-vision h3{
+    margin: 0 0 10px 0 ;
+    font-size: 22px;
+}
+#section-vision p{
+    font-size: 18px;
+}
+
+/* PREGUNTAS */
+#section-dudas{
+    padding: 50px 20%;
+    text-align: center !important;
+}
+#section-dudas a{
+    color: rgb(54, 156, 196);
+    text-decoration: none;
+}
+#section-dudas a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* PREGUNTAS FRECUENTES */
+/* SECCIÓN DE PREGUNTAS */
+#section-preguntas{
+    /* margin: 60px 0 0 0; */
+    background-color: green;
+    background-image: url(img/Fondo-Marmol.jpg);
+    background-size: cover;
+    padding: 80px 10%;
+    text-align: center;
+}
+.div-preguntas{
+    text-align: left;
+    margin: 30px 0;
+}
+.div-preguntas h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* FORMULARIO */
+/* SECCIÓN FORMULARIO */
+#section-formulario{
+    background-image: url(img/Fondo-Marmol.jpg);
+    background-size: cover;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column; 
+}
+#section-formulario input{
+    margin-bottom: 10px;
+    width: 60%;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+#section-formulario textarea{
+    margin-bottom: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+}
+#section-formulario article{
+/* background-color: red; */
+text-align: center;
+}
+#section-formulario div{
+    display: flex;
+    margin: 20px 10%;
+    background-color: #c5c6d090;
+    border-radius: 10px;
+}
+#section-formulario button{
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    width: 20%;
+    background-color:#8d0508;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+#section-formulario button:hover{
+    transform: scale(1.05);
+}
+#section-formulario form{
+    text-align: left;
+    /* background-color: green; */
+    width: 70%;
+    padding: 15px 0 15px 50px;
+}
+#section-formulario img{
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* PRODUCTO */
+/* FICHA DE PRODUCTO */
+#section-ficha{
+    padding: 80px 15%;
+    display: flex;
+}
+#section-ficha img{
+    width: 30%;
+}
+#art-ficha{
+    margin: 0 20px 0 20px;
+}
+#art-ficha h1{
+    font-size: 24px;
+}
+#art-ficha p{
+    margin: 10px 0;
+    font-size: 16px;
+}
+#art-ficha ul{
+    margin: 0 10px 20px 20px;
+}
+#section-ficha button{
+    width:40%;
+    margin: 10px;
+    /* height: 30px; */
+    background-color: white;
+    border: solid 2px #8d0508;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#boton-comprar{
+    background-color: #8d0508 !important;
+    color: white;
+    font-weight: 600;
+}
+#section-ficha button:hover{
+    transform: scale(1.035);
+}
+#div-ficha-botones{
+    display: flex;
+    margin-left: -10px;
+}
+
+/* MÁS DEL VENDEDOR */
+.mas-productos{
+    /* background-color: #F4F4F6; */
+    padding: 50px 10% 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mas-productos article{
+    height: auto;
+    width: 15%;
+    background-color: #DDDDE0;
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-radius: 10px;
+    margin: 15px;
+    /* flex: 1 0 15%; */
+}
+.mas-productos article h4{
+    margin-bottom: 5px;
+}
+.mas-productos article p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.mas-productos article img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.mas-productos article a{
+    /* background-color: green; */
+    padding: 5px 10px;
+    border-radius: 3px;
+    color:black;
+    border: solid black 1px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.mas-productos article a:hover{
+    color: white;
+    border: none;
+    background-color: black;
+}
+#section-mas{
+    background-color: #8d0508;
+    text-align: center;
+    padding: 30px 0 ;
+}
+#section-mas h2{
+    color: white;
+}
+#section-rel{
+    background-color: #c5c6d0;
+    text-align: center;
+    padding: 30px 0 ;
+}
