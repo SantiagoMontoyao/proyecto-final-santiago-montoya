@@ -1,0 +1,15 @@
+{
+  "name": "entrega-2-montoya-santiago",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node": "^21.6.2",
+    "sass": "^1.71.1"
+  }
+}
